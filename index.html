@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="kanban">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Kanban</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"> <i class="far fa-calendar logo1"></i>YourKanban</div>
+                <div class ="createcard">
+                <input id="inputarea" type="text" placeholder="Add task" > 
+                <button id="add" class="add" >Add</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class ="container1">
+                <div id="requested" class ="board">
+                    <h3>REQUESTED</h3>
+                        <div id="tasks">
+                            <!--<li class="tasks-added" draggable="true">
+                            <div class="card-content"></div>
+                            <div class="remove"></div>
+                        </li>-->  
+                        </div> 
+                </div>
+                <div id="inprogress"class ="board">
+                    <h3>IN-PROGRESS</h3>
+                </div>
+                <div id="done"class ="board">
+                    <h3>DONE</h3>
+                </div>
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>   
+</html>
